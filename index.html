@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Home | Repair In Process Service</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="logo">RIPs</a>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="process.html">Process</a></li>
+                <li><a href="#contact">Contact</a></li>
+        </header>
+        <section>
+            <h1 id="text"><span>Welcome to</span><br> RIPs</h1>
+            <a href="#about" id="btn">Explore</a> 
+            <img src="blue.png" id="backbg"> 
+            <img src="com.png" id="forebg"> 
+        </section>
+        <div class="sec">
+            <h2 id="about">About us</h2>
+            <p1>
+                <br> Panithan the bak <br>
+            </p1>
+            <h3 id="contact">Contact</h3>
+            <p2>
+                <br>Panithan Chantubtim 6201023610164<br>
+                Panachai Thongpaiwan 6201023610156<br>
+                Thitipan Saelee 6201023620046<br>
+                Nithiwat Teansanwangnapa 6201023630041
+            </p2>
+        </div>
+        <script>
+            let text= document.getElementById('text');
+            let blue= document.getElementById('backbg');
+            let btn= document.getElementById('btn');
+            let com= document.getElementById('forebg');
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                text.style.top = 35+value*-0.5+'%';
+                com.style.top = value*-1.5+'px';
+            })
+        </script>
+    </body>
+</html>
